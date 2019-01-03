@@ -1,0 +1,13 @@
+package bbsapi.domain.repository.book;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import bbsapi.domain.model.Genru;
+
+public interface GenruRepository extends JpaRepository<Genru, Long>{
+	@Query("SELECT x FROM Genru")
+	List<Genru> findAll();
+
+}

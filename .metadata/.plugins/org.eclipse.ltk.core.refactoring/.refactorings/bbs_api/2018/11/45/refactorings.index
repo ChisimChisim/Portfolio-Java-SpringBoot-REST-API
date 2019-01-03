@@ -1,0 +1,29 @@
+1541707729355	Rename package 'com.example.bbs'
+1541707875840	Delete element
+1541708252293	Rename package 'converter'
+1541708317657	Rename package 'book'
+1541708390611	Rename package 'borrowing'
+1541708427165	Rename package 'review'
+1541708449159	Rename package 'bbsapi.model.repository'
+1541708536454	Rename package 'user'
+1541708753422	Rename package 'book'
+1541708806379	Rename package 'borrowing'
+1541708879585	Rename package 'bbsapi.model.service.borrowing'
+1541708945119	Rename package 'bbsapi.model.repository.borrowing'
+1541708956213	Rename package 'bbsapi.model.repository.review'
+1541708966405	Rename package 'bbsapi.model.repository.user'
+1541709009423	Rename package 'review'
+1541709045823	Rename package 'user'
+1541710041438	Rename package 'book'
+1541717674300	Rename package 'borrowing'
+1541717723815	Rename package 'login'
+1541717834527	Rename package 'review'
+1541721566508	Delete element
+1541721577369	Delete element
+1541721613882	Delete element
+1541721637871	Delete element
+1541721648229	Delete element
+1541777596055	Rename package 'review'
+1541781998663	Copy compilation unit
+1541782012534	Rename type 'BookService'
+1541792994693	Rename package 'borrowing'

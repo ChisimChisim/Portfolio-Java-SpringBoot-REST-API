@@ -1,0 +1,5 @@
+package bbsapi;
+
+public class WebMvcConfig {
+
+}

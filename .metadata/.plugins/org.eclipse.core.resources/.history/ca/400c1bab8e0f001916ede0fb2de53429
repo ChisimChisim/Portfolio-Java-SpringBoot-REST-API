@@ -1,0 +1,30 @@
+package bbsapi.domain.service.user;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.AccessDeniedException;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import bbsapi.domain.model.User;
+import bbsapi.domain.repository.user.UserRepository;
+
+@Service
+@Transactional
+public class UserService {
+	
+	@Autowired
+	UserRepository userRepository;
+	
+	public boolean createUser(User user){
+		if(user.getUserId()=="" || user.getPassword()=="" || user.getFirstName()=="" || user.getLastName()=="") {
+			throw new AccessDeniedException("User info must not be null");
+		}
+		if(userRepository.findOneByUserId(user.getUserId())==null) {
+			userRepository.save(user);
+			return true;
+		}else {
+			return false;  //The userId already exists.
+		}
+		
+	}
+
+}

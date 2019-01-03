@@ -1,0 +1,43 @@
+package bbsapi.domain.service.review;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.parameters.P;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import bbsapi.domain.model.Review;
+import bbsapi.domain.model.ReviewId;
+import bbsapi.domain.repository.review.ReviewRepository;
+
+@Service
+@Transactional
+public class ReviewService {
+	@Autowired
+	ReviewRepository reviewRepository;
+	
+	public List<Review> findByBookId(Long bookId) {
+	  	   List<Review> reviews = reviewRepository.findByBookIdOrderByRegistrationDate(bookId);
+	  	   return reviews;
+	   }
+	
+	public Review findReview(Long bookId, String userId) {
+	       Review review= reviewRepository.findOneByBookIdAndUserId(bookId, userId);
+	       return review;
+}
+	
+	
+	@PreAuthorize("hasRole('ADMIN') or #reviewId.userId == principal.user.userId")
+	public void deleteReview(@P("reviewId") ReviewId reviewId) {
+		reviewRepository.deleteById(reviewId);		
+	}
+	
+	public Review createReview(Review review){
+        reviewRepository.save(review);
+       
+		return review;
+	}
+	
+    
+}

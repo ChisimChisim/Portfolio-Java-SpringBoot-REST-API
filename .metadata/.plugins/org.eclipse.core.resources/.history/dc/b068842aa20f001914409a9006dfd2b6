@@ -13,7 +13,7 @@ public class StripeClient{
 
     public StripeClient() {
     	//Add your secret Stripe payment key 
-        Stripe.apiKey = "sk_test_XXXXXXXXXXXXXXXXXXX";
+        Stripe.apiKey = "sk_test_wecZHZ5RkspvJqBBMjIAbh2r";
     }
 
     public String chargeCreditCard(String token, Integer amount) throws Exception {

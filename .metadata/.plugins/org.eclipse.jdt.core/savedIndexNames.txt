@@ -20,7 +20,6 @@ INDEX VERSION 1.131+C:\Users\chiek\Desktop\Java\REST\.metadata\.plugins\org.ecli
 4219445297.index
 2866302979.index
 1046042467.index
-1105612427.index
 717952337.index
 3113126692.index
 347780759.index
@@ -28,8 +27,8 @@ INDEX VERSION 1.131+C:\Users\chiek\Desktop\Java\REST\.metadata\.plugins\org.ecli
 3609080800.index
 1105672208.index
 2291159602.index
-902811759.index
 3786350874.index
+902811759.index
 4147178321.index
 2131744701.index
 2650206250.index

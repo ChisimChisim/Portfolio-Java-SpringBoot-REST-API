@@ -8,12 +8,12 @@ import bbsapi.domain.model.Genru;
 import bbsapi.domain.service.book.GenruService;
 
 @RestController
-@RequestMapping("api/genre")
+@RequestMapping("api/genru")
 public class GenruController {
 	@Autowired
 	GenruService genruService;
 	
-	//Get all genre
+	//Get all genru
 	@RequestMapping(method=RequestMethod.GET, produces = "application/json")
 	List<Genru>  getAllGenru() {
 		List<Genru> genru = genruService.findAll();

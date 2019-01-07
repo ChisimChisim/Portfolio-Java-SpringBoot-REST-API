@@ -32,10 +32,10 @@ INSERT INTO book (title, text, genru_id, author, released_date, image, price) VA
 INSERT INTO book (title, text, genru_id, author, released_date, image, price) VALUES ("I Can't Make This Up: Life Lessons", "New York Times bestselling author, superstar comedian, and Hollywood box office star Kevin Hart turns his immense talent to the written word by writing some words. Some of those words include: the, a, for, above, and even even. Put them together and you have a 'hilarious but also heartfelt' (Elle) memoir on survival, success, and the importance of believing in yourself.", '1', 'Kevin Hart', '05/08/2018', "https://images-na.ssl-images-amazon.com/images/I/51DXNQDzSSL.jpg", 100);
 
 
-INSERT INTO review (book_id, user_id, rate, comment) VALUES ('1', 'admin', '5', 'commenttest1');
-INSERT INTO review (book_id, user_id, rate, comment) VALUES ('2', 'user1', '2', 'commenttest3');
-INSERT INTO review (book_id, user_id, rate, comment) VALUES ('2', 'user2', '3', 'commenttest4');
-INSERT INTO review (book_id, user_id, rate, comment) VALUES ('2', 'user3', '4', 'commenttest5');
+INSERT INTO review (book_id, user_id, rate, comment) VALUES ('1', 'ychieko', '5', 'commenttest1');
+INSERT INTO review (book_id, user_id, rate, comment) VALUES ('2', 'test1', '2', 'commenttest3');
+INSERT INTO review (book_id, user_id, rate, comment) VALUES ('2', 'test2', '3', 'commenttest4');
+INSERT INTO review (book_id, user_id, rate, comment) VALUES ('2', 'test3', '4', 'commenttest5');
 
 
 

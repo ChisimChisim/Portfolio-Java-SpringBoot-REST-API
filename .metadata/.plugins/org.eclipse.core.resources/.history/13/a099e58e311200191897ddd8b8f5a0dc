@@ -21,7 +21,7 @@ public class BooksController {
 	}
 	
 	//Get book by genru
-	@RequestMapping(value="/genre/{genruId}", method=RequestMethod.GET, produces = "application/json")
+	@RequestMapping(value="/genru/{genruId}", method=RequestMethod.GET, produces = "application/json")
 	List<Rating> getBooksByGenruId(@PathVariable Long genruId) {
 		List<Rating> book = ratingService.findByGenruId(genruId);
 		return book;
